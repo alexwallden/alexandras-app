@@ -15,6 +15,7 @@ body {
         top: 20px;
         right: 20px;
         border: none;
+        z-index: 4;
 
         span {
             background-color: black;
@@ -58,6 +59,10 @@ body {
     }
 }
 
+.display-none{
+    display: none;
+}
+
 
 
 @media only screen and (min-width: 700px) {
@@ -88,4 +93,8 @@ body {
             
         }
     }
+}
+
+.display-none{
+    display: none;
 }
