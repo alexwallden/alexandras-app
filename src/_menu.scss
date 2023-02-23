@@ -1,0 +1,26 @@
+.menu-button-container {
+    
+    button {
+       height: 60px;
+        width: 70px;
+        background-color: #d9e6e6dd;
+        border-radius: 5px;
+        line-height: 25px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        border: none;
+        
+        span {
+            background-color: black;
+            width: 45px;
+            height: 5px;
+            display: block;
+            border-radius: 3px;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            margin-top: 7px;
+
+         }
+    }
+}
