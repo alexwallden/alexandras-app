@@ -8,7 +8,23 @@
     <title>Vite + TS</title>
   </head>
   <body>
-   <header></header>
+   <header>
+    <div class="menu-button-container">
+      <button id="menu-button" class="menu-btn-stripes" aria-label="Open/Close the menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="open-menu display-none" id="open-menu">
+      <ul class="menu-options">
+        <li>Hem</li>
+        <li>Våra katter</li>
+        <li>Fakta om jourkatter</li>
+        <li>Anmäl intresse</li>
+      </ul>
+    </nav>
+   </header>
    <section id="section__hero-img">
     <img  class="heroimg" src='./public/images/daria-shatova-46TvM-BVrRI-unsplash.jpg' alt="katt som ligger på rygg">
    </section>
