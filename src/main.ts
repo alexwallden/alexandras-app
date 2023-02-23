@@ -1,1 +1,4 @@
-import './style.css'
+import './style.scss'
+import { createFormHtml } from './ts/signUp';
+
+createFormHtml();
