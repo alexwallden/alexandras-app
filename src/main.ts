@@ -3,8 +3,6 @@ import './style.scss'
 const menuBtn = document.querySelector('#menu-button') as HTMLButtonElement;
 menuBtn.addEventListener('click', openMenu);
 
-let menuOpen = false
-
 function openMenu() {
     const openMenu = document.querySelector('#open-menu')
     if (openMenu?.classList.contains('display-none')) {
