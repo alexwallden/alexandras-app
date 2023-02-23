@@ -1,0 +1,1 @@
+const sliderPlacement = document.querySelector('.swiper');
