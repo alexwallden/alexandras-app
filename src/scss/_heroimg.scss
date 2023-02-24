@@ -1,5 +1,13 @@
+
+.heroimg {
+  ;
+}
+
+@media only screen and (min-width: 700px) {
+
 .heroimg {
   object-fit: cover;
   width: 100vw;
   height: 100vh;
+}
 }

@@ -11,15 +11,19 @@ export function createFormHtml() {
   const signUpSection = document.getElementById('section__signup') as HTMLElement;
   // const form: HTMLFormElement = createAndAppendElement('form', signUpSection) as HTMLFormElement;
   signUpSection.innerHTML = /*html */ `
-  <label for='name-input'>
-  För- och efternamn:
-    <input type='text' name='name-input' id='name-input'>
-    </label>
-    <label for='address'>
-    Adress: 
-      <input type='text' name='address' id='address-input'>
-    </label>
-    <input type='button' value='Anmäl' id='submit-btn'>
+  <form>
+    <label for='name-input'>
+      För- och efternamn:
+        <input type='text' name='name-input' id='name-input'>
+      </label>
+      <label for='address'>
+      Adress: 
+        <input type='text' name='address' id='address-input'>
+      </label>
+    </form>
+    <div class="btn-container">
+      <input type='button' value='Anmäl' id='submit-btn'>
+    </div>
     `;
 
   const submitBtn = document.getElementById('submit-btn');
