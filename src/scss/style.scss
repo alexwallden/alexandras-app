@@ -8,17 +8,16 @@
 
 #section {
   &__facts {
-    width: 100%;
+    width: 90%;
     height: 20rem;
     padding: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 4px solid teal;
+    margin-left: 5%;
   }
-}
-
-.swiper-container {
 }
 
 .swiper-wrapper .swiper {
@@ -29,3 +28,17 @@
   height: 300px;
   width: auto;
 }
+
+.cat-facts {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: fantasy;
+  color: teal;
+  letter-spacing:3px;
+  margin-bottom: 5px;
+}
+
+
