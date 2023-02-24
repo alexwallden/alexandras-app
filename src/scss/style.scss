@@ -6,6 +6,29 @@
   box-sizing: border-box;
 }
 
+.cat-facts {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: fantasy;
+  color: teal;
+  letter-spacing:3px;
+  margin-bottom: 5px;
+}
+
+.swiper-wrapper .swiper {
+  width: 250px;
+}
+
+.swiper-slide img {
+  height: 300;
+  width: 250;
+}
+
+@media only screen and (min-width: 700px) {
+
 #section {
   &__facts {
     width: 90%;
@@ -26,19 +49,7 @@
 
 .swiper-slide img {
   height: 300px;
-  width: auto;
+  width: 250px;
 }
 
-.cat-facts {
-  font-size: 1.5rem;
 }
-
-h2 {
-  font-size: 2.5rem;
-  font-family: fantasy;
-  color: teal;
-  letter-spacing:3px;
-  margin-bottom: 5px;
-}
-
-
