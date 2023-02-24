@@ -6,15 +6,9 @@ import { Person } from './models/Person';
 //   return element
 // }
 
-
-
 export function createFormHtml() {
-  const savedData = JSON.parse(
-    localStorage.getItem('savedData') || '[]'
-  ) as Person[];
-  const signUpSection = document.getElementById(
-    'section__signup'
-  ) as HTMLElement;
+  const savedData = JSON.parse(localStorage.getItem('savedData') || '[]') as Person[];
+  const signUpSection = document.getElementById('section__signup') as HTMLElement;
   // const form: HTMLFormElement = createAndAppendElement('form', signUpSection) as HTMLFormElement;
   signUpSection.innerHTML = /*html */ `
   <label for='name-input'>
@@ -32,9 +26,7 @@ export function createFormHtml() {
 
   submitBtn?.addEventListener('click', () => {
     const nameInput = document.getElementById('name-input') as HTMLInputElement;
-    const addressInput = document.getElementById(
-      'address-input'
-    ) as HTMLInputElement;
+    const addressInput = document.getElementById('address-input') as HTMLInputElement;
     const person = new Person(nameInput.value, addressInput.value);
 
     if (nameInput.value !== '' && addressInput.value !== '') {

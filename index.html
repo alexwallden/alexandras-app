@@ -3,38 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+    <link rel="stylesheet" href="./src/scss/style.scss" />
   </head>
   <body>
-   <header>
-    <div class="menu-button-container">
-      <button id="menu-button" class="menu-btn-stripes" aria-label="Open/Close the menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <nav class="open-menu display-none" id="open-menu">
-      <ul class="menu-options">
-        <li>Hem</li>
-        <li>Våra katter</li>
-        <li>Fakta om jourkatter</li>
-        <li>Anmäl intresse</li>
-      </ul>
-    </nav>
-   </header>
-   <section id="section__hero-img">
-    <img  class="heroimg" src='./public/images/daria-shatova-46TvM-BVrRI-unsplash.jpg' alt="katt som ligger på rygg">
-   </section>
-   <section id="section__admin">
-    <article class="swiper"></article>
-   </section>
-   <section id="section__slider"></section> 
-   <section id="section__facts"></section>
-   <section id="section__signup"></section>
+    <header>
+      <div class="menu-button-container">
+        <button id="menu-button" class="menu-btn-stripes" aria-label="Open/Close the menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="open-menu display-none" id="open-menu">
+        <ul class="menu-options">
+          <li>Hem</li>
+          <li>Våra katter</li>
+          <li>Fakta om jourkatter</li>
+          <li>Anmäl intresse</li>
+        </ul>
+      </nav>
+    </header>
+    <section id="section__hero-img">
+      <img class="heroimg" src="./public/images/daria-shatova-46TvM-BVrRI-unsplash.jpg" alt="katt som ligger på rygg" />
+    </section>
+    <section id="section__admin">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./public/images/finuds_1.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./public/images/findus_2.jpg" alt="" /></div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+    <section id="section__slider"></section>
+    <section id="section__facts">
+      <h2>Fakta om katthemmet</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ipsam blanditiis nisi maxime cum fuga ut quis
+        aut fugiat incidunt labore ducimus sed alias voluptates aliquam provident, animi eligendi iusto!
+      </p>
+    </section>
+    <section id="section__signup"></section>
     <script type="module" src="/src/main.ts"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
